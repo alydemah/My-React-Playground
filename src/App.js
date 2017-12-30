@@ -4,8 +4,10 @@ import React from 'react';
 // Can have state
 class App extends React.Component {
   render(){
-    return <h1>Hello World</h1>
-  }
+    return (
+           <h1>Hello World</h1>
+    )
+}
 }
 // This is Statless function Component
 // Can't have state
