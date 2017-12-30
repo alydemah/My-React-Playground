@@ -4,14 +4,24 @@ import React from 'react';
 // Can have state
 class App extends React.Component {
   render(){
+    //let title = this.props.title;
     return (
-           <h1>Hello World</h1>
+           <h1>{this.props.title}</h1>
+
+           // OR
+           // <h1>{title}</h1>
     )
 }
 }
 // This is Statless function Component
 // Can't have state
 // const App = () => <h1>Hello World</h1>
+
+
+App.defaultProps = {
+ title: "This is default value and it can be override if we passed value to title"
+ 
+}
 
 
 export default App
